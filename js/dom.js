@@ -27,7 +27,10 @@ document.body.addEventListener("click", (event) => {
 
   if (paspaustasEl.style.color === "green") {
     paspaustasEl.style.color = "black";
+    const dabartinisTextas = paspaustasEl.textContent;
+    paspaustasEl.textContent = dabartinisTextas.replace("---zalia", "");
   } else {
     paspaustasEl.style.color = "green";
+    paspaustasEl.textContent += "--zalia";
   }
 });
