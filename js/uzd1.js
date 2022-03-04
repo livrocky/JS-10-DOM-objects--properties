@@ -4,35 +4,47 @@
 //sukurti metoda kuris paskaiciuoja ir grazina pazymiu vidurki
 //myAvg
 
-// const stud1 = {
-//   name: "Mike",
-//   //      0  1  2  3   4
-//   marks: [8, 9, 7, 6, 10],
-//   myAvg: function () {
-//     let total = 0;
-//     for (let i = 0; i < this.marks.length; i++) {
-//       total += this.marks[i];
-//     }
+const stud1 = {
+  name: "Mike",
+  //      0  1  2  3   4
+  marks: [8, 9, 7, 6, 10],
+  myAvg: function () {
+    let total = 0;
+    for (let i = 0; i < this.marks.length; i++) {
+      total += this.marks[i];
+    }
 
-//     // console.log("total ===", total);
-//     const avg = total / this.marks.length;
-//     console.log(`${this.name} students avg is ${avg}`);
-//     return avg;
-//   },
-// };
-// stud1.myAvg();
-// stud2.myAvg();
+    // console.log("total ===", total);
+    const avg = total / this.marks.length;
+    console.log(`${this.name} students avg is ${avg}`);
+    return avg;
+  },
+};
+const stud2 = {
+  name: "Jill",
+  //      0  1  2  3   4
+  marks: [5, 10, 9, 8, 7],
+  myAvg: function () {
+    let total = 0;
+    for (let i = 0; i < this.marks.length; i++) {
+      total += this.marks[i];
+    }
 
-// const students = [stud1, stud2];
+    // console.log("total ===", total);
+    const avg = total / this.marks.length;
+    console.log(`${this.name} students avg is ${avg}`);
+    return avg;
+  },
+};
+stud1.myAvg();
+stud2.myAvg();
 
-// for (let i = 0; i < students.length; i++) {
-//   const currentStudAvg = students[i].myAvg();
-//   studAverages.push(currentStudAvg);
-// }
-// console.log(`studAverages===`, studAverages);
+const students = [stud1, stud2];
+const studAverages = [];
+for (let i = 0; i < students.length; i++) {
+  const currentStudAvg = students[i].myAvg();
+  studAverages.push(currentStudAvg);
+}
+console.log(`studAverages===`, studAverages);
 
-// const stud2 = {
-//   name: "Jill",
-//   marks: [5, 10, 9, 8, 7],
-//   myAvg: () => {},
-// };
+console.log(document);
