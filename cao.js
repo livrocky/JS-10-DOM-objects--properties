@@ -1,20 +1,23 @@
 //1. Susikuriame objektą "car". Duodame jam tris properties: "doors", "color", "brand". Reikšmes įrašykite patys, tik atminkite - doors bus skaičius, o color ir brand - string'ai. Pasiconsole'inkite ir patikrinkite ar matosi car objektas, ar galite atskirai pasiimti vieną iš jo parametrų (pvz. car.doors).
 
-// const car = {
-//   doors: 4,
-//   colors: "red",
-//   brands: "BMW",
-// };
+const car = {
+  doors: 1,
+  colors: "red",
+  brands: "BMW",
+};
 
-// if (car.doors === 5) {
-//   // alert("car has 5 doors");
-// } else if (car.doors === 4) {
-//   // alert("car has 4 doors");
-// } else {
-//   // alert("turi neiprasta sk duru");
-// }
-
-// console.log(car.colors);
+if (car.doors === 5) {
+  console.log(`car has 5 doors`);
+} else if (car.doors === 4) {
+  console.log("car has 4 doors");
+} else if (car.doors === 3) {
+  console.log("car has 4 doors");
+} else if (car.doors === 2) {
+  console.log("car has 2 doors");
+} else {
+  console.log("car has unusual amount of doors");
+}
+console.log(car.colors);
 
 //2. Sukuriame formą su dviem input - name ir surname. Pateikus formą, JS turi pasiimti vardą ir pavardę ir sukurti objektą pavadinimu 'person'. Šis objektas turės du parametrus - name ir surname. Kai tik objektas susikuria (t.y. dar addEventListener funkcijoje) - atsispausdink objektą ir pažiūrėk ar viskas gerai veikia. Hint: už funkcijos ribų negali atspausdinti objekto, nes const person = {} yra limituotas konkrečiame bloke (šiuo atveju - funkcijoje). Už jos ribų jis neegzistuoja.
 
