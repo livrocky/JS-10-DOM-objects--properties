@@ -27,10 +27,10 @@ document.body.addEventListener("click", (event) => {
   //keiciam is juodos i zalia ir atgal
   if (paspaustasEl.style.color === "green") {
     paspaustasEl.style.color = "black";
-    const dabartinisTextas = paspaustasEl.textContent;
-    paspaustasEl.textContent = dabartinisTextas.replace("--zalia", "");
+    // const dabartinisTextas = paspaustasEl.textContent;
+    // paspaustasEl.textContent = dabartinisTextas.replace("--zalia", "");
   } else {
     paspaustasEl.style.color = "green";
-    paspaustasEl.textContent += "--zalia";
+    // paspaustasEl.textContent += "--zalia";
   }
 });
