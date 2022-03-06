@@ -25,13 +25,36 @@ BtnEl.addEventListener("click", (event) => {
 //2. kai paspaudiam ant Question 1 parodom po juo esanti elementa,
 // dar karta paspaudus paslepiam (classList.toggle())
 
-const titleEl = document.querySelector(".acc__title");
-const textEl = document.querySelector(".acc__text");
-console.log(`titleEl===`, titleEl);
-titleEl.addEventListener("click", () => {
-  textEl.classList.toggle("acc__text");
-});
+// const titleEl = document.querySelector(".acc__title");
+// const textEl = document.querySelector(".acc__text");
+// console.log(`titleEl===`, titleEl);
+// titleEl.addEventListener("click", () => {
+//   textEl.classList.toggle("acc__text");
+// });
 
 // 3. padarom kad paspaudus ant bet kurio Question el butu parodomas po juo esantis el
 
 // Sukurti eventa , paspaudus ant Object, display class ir su toggle
+
+const accordionEl = document.querySelector(".accordion");
+// console.log(accordionEl);
+
+const textEl = document.querySelector(".acc__text");
+const titleEl = document.querySelector(".acc__title");
+const textEl2 = document.body.children[2].children[3];
+const textEl3 = document.body.children[2].children[5];
+
+accordionEl.addEventListener("click", (event) => {
+  console.log(event);
+  // textEl.classList.toggle("acc__text");
+
+  const clickedTitle = event.target;
+  console.log("clickedTitle===>", clickedTitle);
+  if (clickedTitle.textContent === "Question 1") {
+    textEl.classList.toggle("acc__text");
+  } else if (clickedTitle.textContent === "Question 2") {
+    textEl2.classList.toggle("acc__text");
+  } else if (clickedTitle.textContent === "Question 3") {
+    textEl3.classList.toggle("acc__text");
+  }
+});
