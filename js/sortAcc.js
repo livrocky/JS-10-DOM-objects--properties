@@ -34,11 +34,7 @@ BtnEl.addEventListener("click", (event) => {
 
 // 3. padarom kad paspaudus ant bet kurio Question el butu parodomas po juo esantis el
 
-// Sukurti eventa , paspaudus ant Object, display class ir su toggle
-
 const accordionEl = document.querySelector(".accordion");
-// console.log(accordionEl);
-
 const textEl = document.querySelector(".acc__text");
 const titleEl = document.querySelector(".acc__title");
 const textEl2 = document.body.children[2].children[3];
@@ -46,7 +42,6 @@ const textEl3 = document.body.children[2].children[5];
 
 accordionEl.addEventListener("click", (event) => {
   console.log(event);
-  // textEl.classList.toggle("acc__text");
 
   const clickedTitle = event.target;
   console.log("clickedTitle===>", clickedTitle);
@@ -58,3 +53,5 @@ accordionEl.addEventListener("click", (event) => {
     textEl3.classList.toggle("acc__text");
   }
 });
+
+//__________PAMOKOS METU_____________//

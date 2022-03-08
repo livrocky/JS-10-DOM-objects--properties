@@ -1,3 +1,9 @@
 .acc__text {
+  display: none;
+  overflow: hidden;
+  transition: height 0.2s ease-in-out;
+}
+
+.show {
   display: block;
 }
